@@ -3,94 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Final Minetails 2 — Mod para Luanti</title>
-<meta name="description" content="Final Minetails 2: mod de Luanti/Minetest com os mascotes do Linux como nextbots. Baixe agora.">
-<link rel="icon" href="logo.png">
+<title>Final Minetails 2</title>
+<meta name="description" content="Final Minetails 2: mod de Luanti/Minetest com os mascotes do Linux como nextbots.">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
-:root{--bg:#0b0504;--card:#1a0b08;--line:#4a1a10;--red:#ff3b1f;--orange:#ff8a2a;--text:#f3e6e1;--mute:#b99890}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:radial-gradient(ellipse at top,#3a0f08 0,var(--bg) 60%) fixed;color:var(--text);font-family:system-ui,Segoe UI,Roboto,sans-serif;line-height:1.6}
-a{color:var(--orange)}
-nav{position:sticky;top:0;z-index:10;background:#0b0504ee;border-bottom:1px solid var(--line);display:flex;gap:20px;justify-content:center;padding:12px;flex-wrap:wrap}
-nav a{text-decoration:none;color:var(--text);font-weight:600;font-size:.95rem}
-nav a:hover{color:var(--red)}
-header{text-align:center;padding:60px 20px 40px}
-header img{max-width:min(420px,85%);image-rendering:pixelated;filter:drop-shadow(0 0 25px #ff3b1f66)}
-header p{max-width:600px;margin:20px auto;color:var(--mute);font-size:1.1rem}
-.btn{display:inline-block;background:linear-gradient(#ff4a2a,#c4220c);color:#fff;text-decoration:none;font-weight:800;padding:16px 36px;border:3px solid #ffb199;box-shadow:0 6px 0 #6b1306;font-size:1.2rem;transition:.1s}
-.btn:hover{transform:translateY(3px);box-shadow:0 3px 0 #6b1306}
-.btn.alt{background:transparent;border-color:var(--line);box-shadow:none;margin-left:10px;font-size:1rem}
-section{max-width:900px;margin:0 auto;padding:40px 20px}
-h2{font-size:1.8rem;margin-bottom:20px;color:var(--red);text-transform:uppercase;letter-spacing:2px;border-left:6px solid var(--orange);padding-left:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--card);border:2px solid var(--line);padding:20px}
-.card h3{color:var(--orange);margin-bottom:6px}
-.card p{color:var(--mute);font-size:.95rem}
-code{background:#000;border:1px solid var(--line);padding:2px 8px;color:#ffb199;font-family:monospace}
-ol{margin-left:22px}ol li{margin:8px 0}
-.dl{text-align:center;background:var(--card);border:2px solid var(--red);margin:20px;max-width:900px;margin-inline:auto;padding:40px 20px}
-.dl p{color:var(--mute);margin-bottom:20px}
-footer{text-align:center;color:var(--mute);padding:40px 20px;border-top:1px solid var(--line);font-size:.9rem}
+:root{--bg:#140907;--panel:#1e100c;--edge:#3b1b13;--text:#e8dcd6;--mute:#a38f87;--accent:#e2431f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Courier New",ui-monospace,monospace}
+main{max-width:680px;margin:0 auto;padding:48px 20px 24px}
+.logo{display:block;width:300px;max-width:80%;margin:0 auto 36px;image-rendering:pixelated}
+p{margin:0 0 16px}
+h2{font-size:1.1rem;margin:44px 0 12px;color:var(--accent);font-weight:700}
+h2::before{content:"> "}
+a{color:var(--text)}
+a:hover{color:var(--accent)}
+.dl{display:block;text-align:center;margin:28px 0;padding:14px 10px;background:#7d2412;color:#fff;text-decoration:none;font-weight:700;
+ border:3px solid;border-color:#c9553a #3a0f07 #3a0f07 #c9553a}
+.dl:hover{background:#932b16;color:#fff}
+.dl:active{border-color:#3a0f07 #c9553a #c9553a #3a0f07}
+code{background:var(--panel);border:1px solid var(--edge);padding:1px 6px}
+ul,ol{padding-left:22px;margin:0 0 16px}
+li{margin:4px 0}
+table{width:100%;border-collapse:collapse;margin-bottom:16px}
+td{border:1px solid var(--edge);padding:8px 10px;vertical-align:top}
+td:first-child{white-space:nowrap;background:var(--panel)}
+.note{color:var(--mute);font-size:.9rem}
+footer{max-width:680px;margin:0 auto;padding:24px 20px 48px;color:var(--mute);font-size:.85rem;border-top:1px solid var(--edge)}
 </style>
 </head>
 <body>
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#recursos">Recursos</a>
-  <a href="#comandos">Comandos</a>
-  <a href="#instalar">Instalação</a>
-  <a href="#download">Download</a>
-</nav>
+<main>
+  <img class="logo" src="logo.png" alt="Final Minetails 2">
 
-<header>
-  <img src="logo.png" alt="Logo do Final Minetails 2">
-  <p>Os mascotes do Linux invadiram o Luanti. Fuja, aguente a paranoia e não deixe que eles te alcancem.</p>
-  <a class="btn" href="https://tinyurl.com/fmta2" target="_blank" rel="noopener">⬇ BAIXAR AGORA</a>
-  <a class="btn alt" href="#sobre">Saiba mais</a>
-</header>
+  <p>Final Minetails 2 é um mod para Luanti (Minetest) que coloca os mascotes do Linux no jogo como nextbots: eles aparecem e vêm atrás de você.</p>
 
-<section id="sobre">
-  <h2>Sobre</h2>
-  <p>O <strong>Final Minetails 2</strong> é um mod para <strong>Luanti (Minetest)</strong> que coloca os mascotes do Linux como <em>nextbots</em> dentro do jogo: entidades que te perseguem sem parar. Uma ideia engraçada que virou um mod cheio de tensão.</p>
-</section>
+  <a class="dl" href="https://tinyurl.com/fmta2" target="_blank" rel="noopener">Baixar Final Minetails 2</a>
 
-<section id="recursos">
-  <h2>Recursos</h2>
-  <div class="grid">
-    <div class="card"><h3>👾 Mascotes do Linux</h3><p>Konqi, Katie, Kori, Rust, Go, Godot, Tux e outros, em modelos 3D.</p></div>
-    <div class="card"><h3>🏃 Nextbots</h3><p>Os mascotes te perseguem pelo mundo e não desistem fácil.</p></div>
-    <div class="card"><h3>🎵 Modo paranoia</h3><p>Ative a paranoia e uma música sinistra toca para aumentar o clima.</p></div>
-    <div class="card"><h3>🔊 Som de proximidade</h3><p>Quanto mais perto eles estão, mais agudo fica o som.</p></div>
-  </div>
-</section>
+  <h2>Mascotes</h2>
+  <p>Cada mascote usa um modelo 3D próprio.</p>
+  <ul>
+    <li>Tux</li>
+    <li>Konqi, Katie e Kori</li>
+    <li>Rust</li>
+    <li>Go</li>
+  </ul>
+  <p class="note">Outros mascotes podem ser adicionados depois.</p>
 
-<section id="comandos">
   <h2>Comandos</h2>
-  <div class="grid">
-    <div class="card"><h3><code>/bot ftails paranoia</code></h3><p>Ativa o modo paranoia, com música.</p></div>
-    <div class="card"><h3><code>/bot paranoia stop</code></h3><p>Desativa o modo paranoia.</p></div>
-  </div>
-</section>
+  <table>
+    <tr><td><code>/bot ftails paranoia</code></td><td>Toca uma música.</td></tr>
+    <tr><td><code>/bot paranoia stop</code></td><td>Para a música.</td></tr>
+  </table>
 
-<section id="instalar">
-  <h2>Instalação</h2>
+  <h2>Como instalar</h2>
   <ol>
-    <li>Baixe o arquivo <code>.zip</code> pelo botão de download.</li>
-    <li>Extraia a pasta do mod em <code>mods/</code> do seu Luanti.</li>
-    <li>Crie ou abra um mundo e ative o mod em <strong>Configurar</strong>.</li>
-    <li>Entre no mundo e boa sorte!</li>
+    <li>Baixe o <code>.zip</code> pelo botão acima.</li>
+    <li>Extraia a pasta do mod dentro de <code>mods/</code> do Luanti.</li>
+    <li>Abra seu mundo em Configurar e ative o mod.</li>
+    <li>Entre no mundo.</li>
   </ol>
-</section>
-
-<div class="dl" id="download">
-  <h2 style="border:0;padding:0">Download</h2>
-  <p>Gratuito. Funciona no Luanti / Minetest.</p>
-  <a class="btn" href="https://tinyurl.com/fmta2" target="_blank" rel="noopener">⬇ BAIXAR FINAL MINETAILS 2</a>
-</div>
-
-<footer>
-  Final Minetails 2 · Mod para Luanti · Não afiliado ao Linux, KDE, Rust, Go ou Godot.
-</footer>
+</main>
+<footer>Final Minetails 2. Projeto de fã, sem relação oficial com Linux, KDE, Rust, Go ou Godot.</footer>
 </body>
 </html>
