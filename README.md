@@ -5,5 +5,5 @@
 This Is The Website For The Game. and the `Oficial Website` To UTMTS (FMT2)
 - 🤔 Who Made This Game?
 - `Tailsgamerv`!
-- ⚡ Fun fact: Final Minetails 2 is the Continued Version of `Final Minetails 1 (Or Unititled Tailsgamerb ClassiCube Server, Final Minetails 2 Started To Use Luanti.)
+- ⚡ Fun fact: Final Minetails 2 is the Continued Version of `Final Minetails 1 (Or Unititled Tailsgamerv ClassiCube Server, Final Minetails 2 Started To Use Luanti.)`
 -->
